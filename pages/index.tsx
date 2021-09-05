@@ -4,13 +4,13 @@ import { routes } from './[name]';
 
 const Home: NextPage = () => (
   <ul>
-    <li>
-      {routes.map((route) => (
-        <Link href={`/${route.name}`} key={route.name}>
+    {routes.map((route) => (
+      <Link href={`/${route.name}`} key={route.name}>
+        <li>
           <a>{route.name}</a>
-        </Link>
-      ))}
-    </li>
+        </li>
+      </Link>
+    ))}
   </ul>
 );
 
