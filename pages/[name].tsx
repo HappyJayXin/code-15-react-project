@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router';
 import BirthdayReminder from '../features/BirthdayReminder';
 import Tours from '../features/Tours';
+import Reviews from '../features/Reviews'
 
 export const routes = [
   {
@@ -11,6 +12,10 @@ export const routes = [
     name: 'tour',
     component: Tours,
   },
+	{
+		name: 'reviews',
+		component: Reviews
+	}
 ];
 
 const Page = () => {
